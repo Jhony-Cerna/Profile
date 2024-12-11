@@ -5,7 +5,7 @@ import ProfileEditForm from '../components/profile/ProfileEditForm.astro';
 import ProfilePasswordForm from '../components/profile/ProfilePasswordForm.astro';
 
 import Layout from '../layouts/Layout.astro';
-import Headeradolecente from '@/components/headerAdolecente.astro';
+import Headeradolecente from '@/components/headerAdolecenteRacha.astro';
 
 import '@/styles/global.css';
 
@@ -14,7 +14,7 @@ const tab = Astro.url.searchParams.get('tab') || 'profile';
 <Layout>
 	<Headeradolecente />
 	
-	<div class="mt-20">
+	<div class="mt-28">
 		<!-- Header del perfil -->
 		<ProfileHeader />
 	</div>
