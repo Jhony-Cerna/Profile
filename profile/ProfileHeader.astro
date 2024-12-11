@@ -1,0 +1,16 @@
+---
+export interface ProfileHeaderProps {
+    username: string;
+    userTag: string;
+}
+const { username = "Nombre del usuario", userTag = "@usuario" } = Astro.props;
+---
+
+<div class="flex flex-col items-center gap-4 bg-[#f8f9fa] p-6 rounded-lg shadow-md">
+    <div class="w-24 h-24 bg-gray-400 rounded-full flex items-center justify-center text-2xl text-white font-semibold">
+    {username.charAt(0)}
+    </div>
+    <h2 class="text-lg font-semibold">{username}</h2>
+    <p class="text-sm text-gray-500">{userTag}</p>
+    <button class="px-4 py-2 bg-pink-200 text-pink-800 rounded-md hover:bg-pink-300">Subir nueva imagen</button>
+</div>
